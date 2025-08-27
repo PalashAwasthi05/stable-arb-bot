@@ -1,0 +1,37 @@
+base_units: 100.0
+poll_interval_ms: 750
+log_csv: snapshots/snapshots.csv
+
+#every added venue should have at least one other matching symbol for cross-venue compatability 
+venues:
+  - name: binanceus
+    symbol: "USDT/USD"
+    taker_fee_bps: 0.0    
+    depth_levels: 20
+    rate_limit_ms: 200
+
+  - name: kraken
+    symbol: "USDT/USD"    
+    taker_fee_bps: 0.0    
+    depth_levels: 20
+    rate_limit_ms: 300
+
+  - name: bitstamp
+    symbol: "USDT/USD"    
+    taker_fee_bps: 0.0    
+    depth_levels: 20
+    rate_limit_ms: 300
+
+  - name: coinbase
+    symbol: "USDT/USD"     
+    taker_fee_bps: 0.0    
+    depth_levels: 20
+    rate_limit_ms: 300
+
+risk:
+  edge_entry_bps: 0.1
+  edge_exit_bps: 2.0
+  max_abs_depeg_bps: 150.0
+  depeg_window_sec: 60
+  price_ttl_ms: 5000
+  max_trade_units: 10000.0
