@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 set -euo pipefail
-python stablecoin_arb_poc.py run-live --config config.yaml
+python stablecoin_arb_engine.py run-live --config config.yaml
